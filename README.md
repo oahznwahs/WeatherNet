@@ -7,3 +7,9 @@ Here are some example city name for testing:<br />
 南京<br />
 天津<br />
 广州<br />
+For the quick search bar:<br />
+北京 - beijing<br />
+上海 - shanghai<br />
+广州 - guangzhou<br />
+深圳 - shenzhen<br /> 
+Pleadse download for testing

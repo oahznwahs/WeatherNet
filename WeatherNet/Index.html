@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>天知道</title>
+  <title>WeatherNet</title>
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/index.css" />
 </head>
@@ -15,16 +15,16 @@
     <div class="search_form">
       <div class="logo"><img src="img/logo.png" alt="logo" /></div>
       <div class="form_group">
-        <input type="text" class="input_txt" placeholder="请输入查询的天气" v-model="city" @keyup.enter="queryWeather" />
+        <input type="text" class="input_txt" placeholder="enter the city name" v-model="city" @keyup.enter="queryWeather" />
         <button class="input_sub" @click="queryWeather">
-          搜 索
+          search
         </button>
       </div>
       <div class="hotkey">
-        <!-- <a href="javascript:;" @click="clickSearch('北京')">北京</a>
-          <a href="javascript:;" @click="clickSearch('上海')">上海</a>
-          <a href="javascript:;" @click="clickSearch('广州')">广州</a>
-          <a href="javascript:;" @click="clickSearch('深圳')">深圳</a> -->
+        <!-- <a href="javascript:;" @click="clickSearch('北京')">Beijing</a>
+          <a href="javascript:;" @click="clickSearch('上海')">Shanghai</a>
+          <a href="javascript:;" @click="clickSearch('广州')">Guangzhou</a>
+          <a href="javascript:;" @click="clickSearch('深圳')">Shenzhen</a> -->
         <a href="javascript:;" v-for="city in hotCitys" @click="clickSearch(city)">{{ city }}</a>
       </div>
     </div>

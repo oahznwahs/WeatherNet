@@ -16,7 +16,7 @@ img{
     border:0px;
 }
 
-/* 清除浮动，解决margin-top塌陷 */
+/* clearfix hack */
 .clearfix:before,.clearfix:after{
     content:'';
     display:table;    
